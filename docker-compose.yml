@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"   # Mapea el puerto 3000 del contenedor al puerto 3000 de tu máquina
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017" # Mapea el puerto de MongoDB
+    volumes:
+      - ./data:/data/db  # Guarda los datos de MongoDB en una carpeta local

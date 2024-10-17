@@ -1,0 +1,13 @@
+{
+  "name": "my-shooter-app",
+  "version": "1.0.0",
+  "description": "Shooter interactivo con Node.js, Express y MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9"
+  }
+}

@@ -1,0 +1,56 @@
+/* Estilos generales del body */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1a1a1a, #4d4d4d); /* Degradado de fondo */
+  color: #fff;
+}
+
+/* Estilo para el título */
+h1 {
+  margin-top: 20px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo para la puntuación */
+#score {
+  font-size: 1.5em;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+/* Estilo para el canvas */
+canvas {
+  border: 5px solid #fff; /* Borde blanco para el canvas */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Sombra alrededor del canvas */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente blanco */
+}
+
+/* Estilos para el mensaje de victoria */
+.alert {
+  font-size: 2em;
+  color: #ffcc00; /* Color dorado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Animación de pulsación para el objetivo */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
